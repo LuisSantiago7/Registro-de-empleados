@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="registroEmpleados.js"></script>
+    <link rel="stylesheet" href="registroEmpleados.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="register" class="contenedoRegistro">
+        <!--REGISTRO EMPLEADOS-->
+        <p>Registro</p>
+        <div class="contenedorInputs">
+            <label for="legajoInput"><input type="text" id="legajoInput" placeholder = "Legajo"></label>
+
+            <label for="Nombre"><input type="text" id="nameEmpleado" placeholder="Nombre"></label>   
+
+            <label for="Apellido"><input type="text" id="apellidoEmpleado" placeholder="Apellido"></label>
+            
+            <label for="fechaNacimiento"><input type="date" id="fechaNacimiento" placeholder="Fecha de Nacimiento"></label>
+            
+            <label for="Cargo"><input type="text" id="cargoEmpleado" placeholder="Cargo"></label>
+        </div>
+
+        <!-- Inputs -->
+
+        <div class="buttonEmpleados">
+            <input type="button" value="Cargar Epleado" id="buttonCargarEmpleado" onclick="cargarEmpleado()">
+
+            <input type="button" value="Mostrar Empleados" id="buttonMostrarEmpleados" onclick="viewAllEmployees()">
+        </div>
+    </div>
+
+    <!-- Credencial Dinamica -->
+    <div id="credencial" class = "identificador" class="hidden">
+            <img id="PhotoEmploye" alt="">
+            
+            <div class="atributosCredencial">
+                <h1 id="nameTexto"></h1>
+                <h2 id="cargoTexto"></h2>
+                <p id="legajoTexto"></p>
+            </div>
+    </div>
+    
+</body>
+</html>

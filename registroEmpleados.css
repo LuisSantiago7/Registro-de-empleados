@@ -1,0 +1,110 @@
+*{
+    font-family: "Roboto";
+}
+.contenedoRegistro p{
+    background-color: #2981B9;
+    padding: 1rem;
+    margin-top: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: white;
+    font-weight: 900;
+    font-size: larger;
+
+}
+.contenedoRegistro{
+    background-color: #2E3F51;
+    width: 40rem;
+    height: 56rem;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    border-radius : 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    0 0 5px rgba(0, 0, 0, 0.5);
+}
+.contenedorInputs{
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 37rem;
+    border-radius: 1rem;
+}
+.contenedorInputs label{
+    padding: 2rem;
+}
+.contenedorInputs input{
+    padding: 1rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+.contenedorInputs input:hover{
+    transform: scale(1.01);
+    transition: 1.2s;
+}
+.contenedorInputs input:not(hover){
+    transform: scale(1);
+    transition: 1.2s;
+}
+
+.buttonEmpleados{
+    display: flex;
+    flex-direction: column;
+
+}
+.buttonEmpleados input{
+    width: 15rem;
+    margin: auto;
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding: 1rem;
+    background-color: #2A80BB;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+        0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttonEmpleados input:active{
+    background-color: #ffffff;
+    transform: scale(0.95);
+}
+
+.buttonEmpleados input:hover{
+    transform: scale(1.03);
+    transition: 1.2s;
+    cursor: pointer;
+}
+.buttonEmpleados input:not(hover){
+    transform: scale(1);
+    transition: 1.2s;
+}
+
+.hidden{
+    display: none;
+}
+
+.identificador{
+    background-color: darkgray;
+    display: none;
+    width: 40rem;
+    height: 25rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+#PhotoEmploye{
+    display: flex;
+    width: 15rem;
+    height: 18rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 3rem;
+    margin-left: 1rem;
+}
+
+.identificador .atributosCredencial{
+    display: flex;
+    flex-direction: column;
+}
+
